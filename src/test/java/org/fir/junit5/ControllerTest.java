@@ -36,7 +36,7 @@ public class ControllerTest {
 
     @Mock
     bookrepository repository;
-
+//automatically inject mock or spy objects into the class you want to test.
     @InjectMocks
     private Controller controller;
 
