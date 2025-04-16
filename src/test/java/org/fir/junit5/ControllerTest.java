@@ -86,7 +86,7 @@ public class ControllerTest {
     }
 
   void deletesuccessTest()throws Exception{
-        Mockito.when(repository.existsById(b1.getId())).thenReturn(true);
+        Mockito.when(repository.existsById(b1.getId())).thenReturn();
         Mockito.doNothing().when(repository).delete(b1);
       Book deletedBook = controller.deleterecord(b1);
 
